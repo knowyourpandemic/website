@@ -41,6 +41,10 @@ header a:hover {
   opacity: 0.5;
 }
 
+#home_navbar a:hover {
+  color: black;
+}
+
 header {
     background-color: #253404;
     color: white;
@@ -93,7 +97,7 @@ header h2 {
 }
 
 #home_header {
-  background-image: url("../media/img/home.png");
+  background-image: url("../media/img/home/header.jpg");
   background-size: cover;
   grid-template-columns: 0.5fr 0.5fr 10fr 1fr;
   height: 54vw;
