@@ -75,6 +75,7 @@ header {
   justify-content: space-evenly;
   grid-column: 3 / 4;
   grid-row: 1 / 2;
+  margin-top: 1em;
 }
 
 header h1 {
@@ -97,16 +98,26 @@ header h2 {
 }
 
 #home_header {
-  background-image: url("../media/img/home/header.jpg");
-  background-size: cover;
+  position: relative;
+  background-color: white;
   grid-template-columns: 0.5fr 0.5fr 10fr 1fr;
-  height: 54vw;
+  margin: -1em 0 -10em 0;
+}
+
+#home {
+  margin-top: 1em;
+}
+
+#home_header img {
+  width: 100%;
+  height: auto;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 main {
   margin: 0 1.5em;
 }
-
 
 article h2 {
   font-size: 1.1em;
@@ -121,9 +132,9 @@ article h2 {
 
 .vid {
   display: block;
-  height: 30vw;
-  margin: 1em auto 2em auto;
-  width: 40vw;
+  height: 50vw;
+  margin: 2em auto 2em auto;
+  width: 80vw;
 }
 
 .bt_fix {
@@ -178,6 +189,10 @@ li {
 
 .mt5 {
   margin-top: 5em;
+}
+
+.mt11 {
+  margin-top: 11em;
 }
 
 .mt_1 {
