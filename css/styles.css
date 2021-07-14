@@ -222,6 +222,14 @@ h4 {
   margin-bottom: 3em;
 }
 
+.max_15 {
+  max-width: 15em;
+}
+
+.max_20 {
+  max-width: 20em;
+}
+
 #home article {
   background-color: whitesmoke;
   display: grid;
@@ -401,6 +409,12 @@ b {
   margin-bottom: 2em;
 }
 
+.toc img {
+  display: block;
+  margin: 1em auto;
+  width: 75%;
+}
+
 @media screen and (min-width: 450px) {
   #logo {
     margin-left: 1em;
@@ -571,6 +585,11 @@ b {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
   } 
+
+  .two_col_900 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   
 }
 
