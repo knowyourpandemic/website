@@ -239,17 +239,15 @@ h4 {
   width: 40vw;
 }
 
-#home article #big_fix {
-  width: 35vw;
-}
-
-
 #home article p {
   font-size: 0.8em;
-  margin: auto 2em;
+  margin: auto 1em auto 1em;
+  padding-bottom: 0.5em;
 }
 
 .left img {
+  display: block;
+  margin: 0 auto 0.5em 0.5em;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
@@ -261,7 +259,7 @@ h4 {
 
 .right img {
   display: block;
-  margin-left: auto;
+  margin: 0 0.5em 0.5em auto;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
@@ -484,6 +482,17 @@ b {
     padding: 0.6em;
   }
 
+  #home article h2 {
+    font-size: 1.5em;
+    line-height: 1.8em;
+  }
+
+  #home article p,
+  #home p,
+  #home_navbar {
+    font-size: 1.15em;
+    line-height: 1.8em;
+  }
 
 }
 
