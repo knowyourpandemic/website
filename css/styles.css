@@ -397,7 +397,7 @@ b {
 
 .full-img {
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
   width: 85vw;
 }
 
