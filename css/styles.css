@@ -590,6 +590,14 @@ b {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .two_col_900 a {
+    grid-row: 2 / 3;
+  }
+
+  .two_col_900 .imh {
+    height: 30vw;
+  } 
   
 }
 
@@ -642,6 +650,11 @@ b {
 
 }
 
+@media screen and (min-width: 1100px) {
+  .two_col_900 .imh {
+    height: 25vw;
+  }
+}
 @media screen and (min-width: 1250px) {
 
   main {
