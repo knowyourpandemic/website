@@ -454,6 +454,10 @@ b, .bold {
   margin-top: 0.7em;
 }
 
+.mb0_8 {
+  margin-bottom: 0.8em;
+}
+
 .hotpink {
   color: hotpink;
 }
@@ -462,6 +466,49 @@ b, .bold {
   margin: -0.5em;
   width: 90vw; 
   height: 148em;
+}
+
+#blog_form {
+  margin: -0.5em;
+  width: 90vw; 
+  height: 126em;
+}
+
+#blog_img {
+  display: block;
+  margin: 2em auto 0 auto;
+  width: 60vw;
+
+}
+
+#blog_title {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-top: 0.3em;
+}
+
+#blog_title::after {
+  display: block;
+  content: "";
+  border-bottom: 0.08em solid black;
+  margin: 0 auto;
+  width: 40vw;
+}
+
+@media screen and (min-width: 370px) {
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 117em;
+  }  
+}
+
+@media screen and (min-width: 420px) {
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 109em;
+  }  
 }
 
 @media screen and (min-width: 450px) {
@@ -531,6 +578,18 @@ b, .bold {
     height: 130em;
   }  
 
+  #blog_title {
+    font-size: 1.6em;
+  }  
+
+}
+
+@media screen and (min-width: 475px) {
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 100em;
+  }  
 }
 
 @media screen and (min-width: 560px) {
@@ -606,7 +665,20 @@ b, .bold {
     margin-top: 0.7em;
   }  
 
+  #blog_title {
+    font-size: 2em;
+  }  
+
 }
+
+@media screen and (min-width: 620px) {
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 92em;
+  }  
+}
+
 
 @media screen and (min-width: 650px) {
   html {
@@ -647,7 +719,12 @@ b, .bold {
     height: 116em;
   }  
 
-}
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 81em;
+  }  
+}  
 
 @media screen and (min-width: 900px) {
 
@@ -727,7 +804,12 @@ b, .bold {
     margin-top: 2.5em;
   }
   
-  
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 71em;
+  }  
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -781,6 +863,12 @@ b, .bold {
     margin: 0em;
     height: 100em;
   } 
+
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 68em;
+  }  
 
 }
 
@@ -839,6 +927,12 @@ b, .bold {
   #doubts_form {
     margin: 0em;
     height: 88em;
+  }  
+
+  #blog_form {
+    margin: -0.5em;
+    width: 90vw; 
+    height: 61em;
   }  
 
 }
