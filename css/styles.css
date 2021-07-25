@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -20,11 +21,14 @@ header a {
 }
 
 #home a,
-#home a:visited {
+#abt a,
+#home a:visited,
+#abt a:visited {
   color: black
 }
 
-#home a:hover {
+#home a:hover,
+#abt a:hover {
   opacity: 0.3;
 }
 
@@ -104,7 +108,8 @@ header h2 {
   margin: -1em 0 -10em 0;
 }
 
-#home {
+#home,
+#abt {
   margin-top: 1em;
 }
 
@@ -195,6 +200,10 @@ li {
   margin-top: 3em;
 }
 
+.mt4 {
+  margin-top: 4em;
+}
+
 .mt5 {
   margin-top: 5em;
 }
@@ -242,24 +251,33 @@ h4 {
   max-width: 30em;
 }
 
-#home article {
+#home article,
+#abt article {
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3em;
 }
 
-#home article h2 {
+#home article {
+  grid-template-columns: 1fr;
+}
+
+
+#home article h2,
+#abt article h2 {
   grid-column: 1 / -1;
   margin: 0.33em 0 1em 0;
   text-align: center;
 }
 
-#home article img {
+#home article img,
+#abt article img {
   width: 40vw;
 }
 
-#home article p {
+#home article p,
+#abt article p {
   font-size: 0.8em;
   margin: auto 1em auto 1em;
   padding-bottom: 0.5em;
@@ -498,11 +516,50 @@ b, .bold {
 #gallery {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0.5em;
+  grid-gap: 1em;
 }
 
 #gallery img {
   width: 100%;
+}
+
+.bottomdash::after {
+  display: block;
+  content: "";
+  margin: 0 auto;
+  padding-bottom: 2em;
+  border-bottom: 0.1em solid black;
+  width: 60vw;
+}
+
+#about article h3 {
+  grid-column: 1 / -1;
+  font-size: 1.1em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.abt_2 {
+  grid-column: 1 / -1;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.right .ap {
+  text-align: center;
+}
+
+.abt_head {
+  font-size: 1.6em;
+}
+
+#abt .aleft {
+  grid-template-columns: 1fr;
+}
+
+#abt .aleft img {
+  display: block;
+  margin: 0 auto 1em auto;
 }
 
 @media screen and (min-width: 370px) {
@@ -592,6 +649,29 @@ b, .bold {
     font-size: 1.6em;
   }  
 
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .abt_head {
+    grid-column: 1 / -1;
+  }
+
+  #abt article {
+    grid-template-columns: 1fr;
+  }
+
+  #about .left p,
+  #about .right p {
+    text-align: center;
+  }
+
+  #about .right img,
+  #about .right p {
+    grid-column: 1 / -1;
+  }
+  
 }
 
 @media screen and (min-width: 475px) {
@@ -639,13 +719,16 @@ b, .bold {
     padding: 0.6em;
   }
 
-  #home article h2 {
+  #home article h2,
+  #abt article h2 {
     font-size: 1.5em;
     line-height: 1.8em;
   }
 
   #home article p,
   #home p,
+  #abt article p,
+  #abt p,
   #home_navbar {
     font-size: 1.15em;
     line-height: 1.8em;
@@ -677,6 +760,14 @@ b, .bold {
 
   #blog_title {
     font-size: 2em;
+  }  
+
+  .abt_head {
+    font-size: 1.6em;
+  }  
+
+  #about article h3 {
+    font-size: 1.3em;
   }  
 
 }
@@ -832,6 +923,53 @@ b, .bold {
     height: 71em;
   }  
 
+  #abt .aleft {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #abt #about {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #abt #about .left img,
+  #abt #about .right img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #abt #about .amain1 {
+    grid-column: 1 / 3;
+  }
+
+  #abt #about .amain2 {
+    grid-column: 3 / 5;
+  }
+
+  #abt #about .amain1 img {
+    margin: 1em auto;
+  }
+
+  #abt #about .amain2 img {
+    margin: 1em auto;
+  }
+
+  #abt #about .aimg {
+    width: 20vw;
+  }
+
+  #about article h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  #about #afix h3 {
+    padding-bottom: 3em;
+  }
+
+  #about #afix img {
+    padding-bottom: 3em;
+  }
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -891,6 +1029,14 @@ b, .bold {
     width: 90vw; 
     height: 68em;
   }  
+
+  #about #afix h3 {
+    padding-bottom: 5em;
+  }
+
+  #about #afix img {
+    padding-bottom: 5em;
+  }
 
 }
 
@@ -956,5 +1102,9 @@ b, .bold {
     width: 90vw; 
     height: 61em;
   }  
+
+  #about #afix img {
+    padding-bottom: 3em;
+  }
 
 }
