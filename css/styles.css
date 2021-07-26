@@ -587,6 +587,9 @@ footer a:hover {
   color: gainsboro;
 }
 
+.wrap {
+  word-wrap: break-word;
+}
 
 @media screen and (min-width: 370px) {
   #blog_form {
